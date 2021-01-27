@@ -1,0 +1,12 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: 'Open Sans', sans-serif;
+  box-sizing: border-box;
+  background-color: rgb(60,65,97);
+  overflow: auto;
+}
+body::-webkit-scrollbar{
+  display: none;
+}

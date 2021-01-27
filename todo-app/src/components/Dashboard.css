@@ -1,0 +1,51 @@
+.dashboardCont {
+	position: relative;
+	background-color: #979696;
+	margin: 5px;
+	margin-bottom: 15px;
+}
+
+.nameCard {
+	width: 200px;
+	margin: 5px;
+	border: 2px solid rgb(24, 197, 143);
+	background-color: rgb(60,65,97);
+	color: white;
+	font-size: 22px;
+}
+
+.cardCont{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content:flex-start space-between;
+	padding:10px;
+}
+
+.removeD {
+	position: absolute;
+	margin: 5px;
+	top: 0;
+	right: 0;
+	border-radius: 100%;
+	width: 25px;
+	height: 25px;
+	color: white;
+	background-color: rgb(199, 3, 1);
+	border: none;
+	top: 0;
+	right: 0;
+}
+
+.newCard{
+	position: absolute;
+	display: flex;
+	margin: 5px;
+	padding: 10px;
+	top: 0;
+	right: 30px;
+	background-color:rgb(24, 197, 143);
+	border: rgb(24, 197, 143);
+	color: white;
+	font-size: 16px;
+	letter-spacing: 3px;
+}

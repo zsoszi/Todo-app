@@ -1,0 +1,31 @@
+.App {
+	margin: 10px; 
+	animation: todo 3s;
+	animation-iteration-count: 1;
+    animation-timing-function: linear;
+   
+}
+
+@keyframes todo {
+	0% {
+		opacity: 0;
+		transform: scale(0) translatex(50%);
+	}
+	100% {
+		opacity: 1;
+		transform: scale(1) translateX(0%);
+	}
+}
+.head {
+	position: relative;
+	color: rgb(142, 147, 173);
+}
+.newDas {
+	margin: 5px;
+	border-radius: 100%;
+	width: 30px;
+	height: 30px;
+	color: white;
+	background-color: rgb(24, 197, 143);
+	border: none;
+}
