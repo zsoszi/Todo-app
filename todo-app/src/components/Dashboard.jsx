@@ -3,19 +3,19 @@ import "./Dashboard.css";
 import Card from "./Card";
 
 function DashboardCont() {
-	const [add, setAdd] = useState([]);
+	const [newArray, setNewArray] = useState([]);
 
 	const create = (e) => {
 		e.preventDefault();
-		setAdd([...add, { completed: false, id: Math.random() * 1000 }]);
+		setNewArray([...newArray, { completed: false, id: Math.random() * 1000 }]);
 	};
 
 	return (
 		<div className="dashboardCont">
 			<input type="text" className="nameCard" />
 			<div className="cardCont">
-				{add.map((a) => (
-					<Card add={add} setAdd={setAdd} key={a.id} a={a} />
+				{newArray.map((array) => (
+					<Card newArray={newArray} setNewArray={setNewArray} key={array.id} array={array} />
 				))}
 			</div>
 			<button onClick={create} className="newCard">

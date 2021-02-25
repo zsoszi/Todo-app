@@ -4,19 +4,19 @@ import Dashboard from "./components/Dashboard";
 
 function App(props) {
 	
-	const [add, setAdd] = useState([]);
+	const [newArray, setNewArray] = useState([]);
 
 	const create = (e) => {
 		e.preventDefault();
-		setAdd([...add, { completed: false, id: Math.random() * 1000 }]);
+		setNewArray([...newArray, { completed: false, id: Math.random() * 1000 }]);
 	};
 
 	return (
 		<div className="App">
 			<h1 className="head">TODO APP</h1>
-			<Dashboard add={add} setAdd={setAdd} />
-			{add.map((a) => (
-				<Dashboard add={add} setAdd={setAdd} key={a.id} a={a} />
+			<Dashboard newArray={newArray} setNewArray={setNewArray} />
+			{newArray.map((array) => (
+				<Dashboard newArray={newArray} setNewArray={setNewArray} key={array.id} array={array} />
 			))}
 
 			<div>

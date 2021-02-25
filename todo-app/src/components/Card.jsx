@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import "./Card.css";
 
-function Card({ a, add, setAdd }) {
+function Card({ array, newArray, setNewArray }) {
 	const [text, setText] = useState(true);
 
 	const remC = () => {
-		setAdd(add.filter((r) => r.id !== a.id));
+		setNewArray(newArray.filter((r) => r.id !== array.id));
 	};
 
 	return (
